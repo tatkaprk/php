@@ -9,14 +9,6 @@ document.querySelectorAll('#btn_num').forEach((button)=>{
     })
 });
 
-
-// document.getElementById('btn_num').addEventListener('click', function (e) {
-//     console.log(e.target.textContent);
-//     inputWindow.value +="1";
-
-
-// })
-
 document.getElementById('btn_sum').addEventListener('click', function () {
     lastOperand = parseInt (inputWindow.value);
     operation = "sum";
