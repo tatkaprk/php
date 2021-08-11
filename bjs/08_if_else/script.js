@@ -31,8 +31,8 @@ function getWinPhrase(){
 }
 
 function gameStart(){
-    minValue = (parseInt(prompt('Минимальное знание числа для игры','0')) || 0) < -999 ? minValue=-999 : minValue;
-    maxValue = (parseInt(prompt('Максимальное знание числа для игры','100')) || 100) > 999 ? maxValue=999 : maxValue;
+    (minValue = parseInt(prompt('Минимальное знание числа для игры','0')) || 0) < -999 ? minValue=-999 : minValue=minValue;
+    (maxValue = parseInt(prompt('Максимальное знание числа для игры','100')) || 100) > 999 ? maxValue=999 : maxValue=maxValue;
     alert(`Загадайте любое целое число от ${minValue} до ${maxValue}, а я его угадаю`);
     answerNumber  = Math.floor((minValue + maxValue) / 2);
     orderNumber = 1;
